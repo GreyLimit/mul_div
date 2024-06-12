@@ -5,7 +5,7 @@ This template code enables systems with restricted abilities to perform fast(ish
 
 This does **not** mean that overflows **cannot** happen, only that the multiplication component does not overflow.  If the divisor is small (relative to the intermediate product) then the final result can *still* overflow the base value type.
 
-Usage:  It is a template function, so include the header file, then 'call' the function providing the unsigned type you want it to operate in as the temaplate argument, thus:
+Usage:  It is a template function, so include the header file, then 'call' the function providing the unsigned type you want it to operate in as the template argument, thus:
 
 ```
 x = mul_div<unsigned int>( a, b, c );
