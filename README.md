@@ -3,7 +3,7 @@ A software implementation of an unsigned combined Multiply then Divide routine.
 
 This template code enables systems with restricted abilities to perform fast(ish[^1]) multiplication followed by division operations *without the intermediate values overflowing the base value type*.
 
-This does not mean that overflows **cannot** happen, only that the multiplication component does not overflow.  If the divisor is small (relative to the intermediate product) then the final result can *still* overflow the base value type.
+This does **not** mean that overflows **cannot** happen, only that the multiplication component does not overflow.  If the divisor is small (relative to the intermediate product) then the final result can *still* overflow the base value type.
 
 Usage:  It is a template function, so include the header file, then 'call' the function providing the unsigned type you want it to operate in as the temaplate argument, thus:
 
